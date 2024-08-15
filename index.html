@@ -1,26 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/AnantaRaut" href="./src/images/logo-new.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ananta Raut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
 
-  <!-- font -->
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-
-      </head>
-      
-      <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
+<body>
+    <div id="main">
+        <div id="panel">
+            <div id="ptop">
+                <div class="elem">
+                    <h3>Hit</h3>
+                    <div id="hitval" class="box"></div>
+                </div>
+                <div class="elem">
+                    <h3>Timer</h3>
+                    <div id="timerval" class="box">60</div>
+                </div>
+                <div class="elem">
+                    <h3>Score</h3>
+                    <div id="scoreval" class="box">0</div>
+                </div>
+            </div>
+            <div id="pbtm"></div>
+            <div id="container">
+                <div id="gameover" style="display: none;">
+                    <h1 style="color: red;">Game Over⭐ <br> Your Score is : <span style="color: rgb(2, 58, 2);"
+                            id="finalScore"></span></h1>
+                    <button id="restartBtn"
+                        style="padding: 10px 20px; font-size: 20px; margin-top: 20px;">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
